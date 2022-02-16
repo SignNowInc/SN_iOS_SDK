@@ -1,0 +1,5 @@
+.DS_Store
+build/
+*.ipa
+*.dSYM.zip
+Pods/
