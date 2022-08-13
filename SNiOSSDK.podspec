@@ -13,8 +13,8 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios, "12.0"
   spec.ios.vendored_frameworks = 'SNiOSSDK.xcframework'
-  spec.source       = { :git => "https://github.com/SignNowInc/SN_iOS_SDK" }
+  spec.source       = { :http => 'https://github.com/SignNowInc/SN_iOS_SDK/blob/master/SNiOSSDK.zip' }
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
 
 end
