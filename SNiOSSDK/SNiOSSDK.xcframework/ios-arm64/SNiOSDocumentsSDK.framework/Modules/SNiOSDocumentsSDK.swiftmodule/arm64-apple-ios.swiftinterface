@@ -1,0 +1,209 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SNiOSDocumentsSDK
+import Alamofire
+import Foundation
+@_exported import SNiOSDocumentsSDK
+import SafariServices
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+@_hasMissingDesignatedInitializers public class SNEditor {
+  public typealias PrefillData = [Swift.String : Swift.String]
+  public struct SignerDTO {
+    public let roleName: Swift.String
+    public let email: Swift.String
+    public init(roleName: Swift.String, email: Swift.String)
+  }
+  public class func openEditor(document: SNiOSDocumentsSDK.SNDocument, prefillData: SNiOSDocumentsSDK.SNEditor.PrefillData?, signers: [SNiOSDocumentsSDK.SNEditor.SignerDTO], presentationContext: UIKit.UIViewController, onFailure: @escaping (Swift.Error) -> ())
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class SNUserSession : ObjectiveC.NSObject {
+  public static let current: SNiOSDocumentsSDK.SNUserSession
+  public var user: SNiOSDocumentsSDK.SNUser?
+  public func start(authorizationResult: SNiOSDocumentsSDK.SNAuthorization.Result, onComplete: @escaping (Swift.Result<SNiOSDocumentsSDK.SNUser, Swift.Error>) -> ())
+  public func finishSession()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension SNiOSDocumentsSDK.SNUserSession {
+  public class func set(configuration: SNiOSDocumentsSDK.SNConfiguration)
+  public func setUserAuthKeys(_ keys: SNiOSDocumentsSDK.SNAuthorization.Result)
+}
+public class SNUser : Swift.Decodable {
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+public class SNFolderProvider {
+  public init()
+  public func getTemplates(documentsLimit: Swift.Int, offset: Swift.Int, order: SNiOSDocumentsSDK.SNFolderProvider.Order, sortBy: SNiOSDocumentsSDK.SNFolderProvider.Sorting, completion: @escaping (Swift.Result<[SNiOSDocumentsSDK.SNDocument], Swift.Error>) -> ())
+  @objc deinit
+}
+extension SNiOSDocumentsSDK.SNFolderProvider {
+  public enum Order : Swift.String {
+    case ascending
+    case descending
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Sorting : Swift.String {
+    case updated
+    case created
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension SNiOSDocumentsSDK.SNDocument {
+  @_hasMissingDesignatedInitializers public class Fields {
+    public var fields: [SNiOSDocumentsSDK.SNDocument.Field]
+    @objc deinit
+  }
+}
+extension SNiOSDocumentsSDK.SNDocument {
+  @_hasMissingDesignatedInitializers public class MetaData {
+    final public let id: Swift.String
+    final public let name: Swift.String
+    final public let parentFolderId: Swift.String
+    final public let ownerId: Swift.String
+    final public let ownerEmail: Swift.String
+    final public let isTemplate: Swift.Bool
+    @objc deinit
+  }
+}
+extension SNiOSDocumentsSDK.SNDocument {
+  @_hasMissingDesignatedInitializers public class SignatureField : SNiOSDocumentsSDK.SNDocument.Field {
+    @objc deinit
+  }
+}
+@_hasMissingDesignatedInitializers public class SNDocument {
+  final public let metaData: SNiOSDocumentsSDK.SNDocument.MetaData
+  final public let fields: SNiOSDocumentsSDK.SNDocument.Fields
+  final public let roles: SNiOSDocumentsSDK.SNDocument.Roles
+  @objc deinit
+}
+extension SNiOSDocumentsSDK.SNDocument {
+  @_hasMissingDesignatedInitializers public class TextField : SNiOSDocumentsSDK.SNDocument.Field {
+    @objc deinit
+  }
+}
+public struct SNConfiguration {
+  public let apiKey: Swift.String
+  public let apiSecret: Swift.String
+  public var canAutoRefreshToken: Swift.Bool
+  public static var defaultAppConfig: SNiOSDocumentsSDK.SNConfiguration {
+    get
+  }
+}
+extension SNiOSDocumentsSDK.SNDocument {
+  @_hasMissingDesignatedInitializers public class Field {
+    public enum FieldType : Swift.String {
+      case signature
+      case initials
+      case text
+      case dropdown
+      case radiobutton
+      case attachment
+      case check
+      case stamp
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    final public let type: SNiOSDocumentsSDK.SNDocument.Field.FieldType
+    @objc deinit
+  }
+}
+@_hasMissingDesignatedInitializers public class SNDetailedDocumentData {
+  final public let documentObject: SNiOSDocumentsSDK.SNDocument
+  public var previewData: Foundation.Data? {
+    get
+  }
+  public var pdfData: Foundation.Data? {
+    get
+  }
+  @objc deinit
+}
+extension SNiOSDocumentsSDK.SNDocument {
+  @_hasMissingDesignatedInitializers public class DropdownField : SNiOSDocumentsSDK.SNDocument.Field {
+    @objc deinit
+  }
+}
+@_hasMissingDesignatedInitializers public class SNWebAuthorization {
+  public class func authorize(configuration: SNiOSDocumentsSDK.SNConfiguration, viewContext: UIKit.UIViewController, completion: @escaping ((Swift.Result<Swift.String, Swift.Error>) -> ()))
+  @objc deinit
+}
+extension SNiOSDocumentsSDK.SNDocument {
+  @_hasMissingDesignatedInitializers public class RadioGroupField : SNiOSDocumentsSDK.SNDocument.Field {
+    @objc deinit
+  }
+}
+public class SNDocumentProvider {
+  public init()
+  public func createTemplate(fromDocument: SNiOSDocumentsSDK.SNDocument, with name: Swift.String, completion: @escaping (Swift.Result<Swift.String, Swift.Error>) -> ())
+  public func createDocument(fromTemplateWithId: Swift.String, with name: Swift.String, completion: @escaping (Swift.Result<Swift.String, Swift.Error>) -> ())
+  public func deleteDocument(documentId: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> ())
+  @objc deinit
+}
+extension SNiOSDocumentsSDK.SNDocument {
+  @_hasMissingDesignatedInitializers public class Roles {
+    final public let signingRoles: [SNiOSDocumentsSDK.SNDocument.Role]
+    final public let viewingRoles: [SNiOSDocumentsSDK.SNDocument.Role]
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers public class Role {
+    final public let id: Swift.String
+    final public let name: Swift.String
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SigningRole : SNiOSDocumentsSDK.SNDocument.Role {
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ViewRole : SNiOSDocumentsSDK.SNDocument.Role {
+    @objc deinit
+  }
+}
+@_hasMissingDesignatedInitializers public class SNAuthorization {
+  public class func authorize(configuration: SNiOSDocumentsSDK.SNConfiguration, credentials: SNiOSDocumentsSDK.SNAuthorization.Credentials, completion: @escaping (Swift.Result<SNiOSDocumentsSDK.SNAuthorization.Result, Swift.Error>) -> ())
+  public class func authorize(configuration: SNiOSDocumentsSDK.SNConfiguration, code: Swift.String, completion: @escaping (Swift.Result<SNiOSDocumentsSDK.SNAuthorization.Result, Swift.Error>) -> ())
+  public class func refreshAuthorization(refreshToken: Swift.String, completion: @escaping (Swift.Result<SNiOSDocumentsSDK.SNAuthorization.Result, Swift.Error>) -> ())
+  @objc deinit
+}
+extension SNiOSDocumentsSDK.SNAuthorization {
+  public struct Credentials {
+    public static var defaultUser: SNiOSDocumentsSDK.SNAuthorization.Credentials {
+      get
+    }
+  }
+  public struct Result {
+  }
+  public enum AuthorizationError : Swift.Error {
+    case commonError
+    case accessTokenInvalid
+    case refreshTokenInvalid
+    public static func == (a: SNiOSDocumentsSDK.SNAuthorization.AuthorizationError, b: SNiOSDocumentsSDK.SNAuthorization.AuthorizationError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension SNiOSDocumentsSDK.SNFolderProvider.Order : Swift.Equatable {}
+extension SNiOSDocumentsSDK.SNFolderProvider.Order : Swift.Hashable {}
+extension SNiOSDocumentsSDK.SNFolderProvider.Order : Swift.RawRepresentable {}
+extension SNiOSDocumentsSDK.SNFolderProvider.Sorting : Swift.Equatable {}
+extension SNiOSDocumentsSDK.SNFolderProvider.Sorting : Swift.Hashable {}
+extension SNiOSDocumentsSDK.SNFolderProvider.Sorting : Swift.RawRepresentable {}
+extension SNiOSDocumentsSDK.SNDocument.Field.FieldType : Swift.Equatable {}
+extension SNiOSDocumentsSDK.SNDocument.Field.FieldType : Swift.Hashable {}
+extension SNiOSDocumentsSDK.SNDocument.Field.FieldType : Swift.RawRepresentable {}
+extension SNiOSDocumentsSDK.SNAuthorization.AuthorizationError : Swift.Equatable {}
+extension SNiOSDocumentsSDK.SNAuthorization.AuthorizationError : Swift.Hashable {}

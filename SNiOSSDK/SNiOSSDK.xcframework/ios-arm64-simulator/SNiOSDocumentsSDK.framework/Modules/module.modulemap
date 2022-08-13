@@ -1,0 +1,11 @@
+framework module SNiOSDocumentsSDK {
+  umbrella header "SNiOSDocumentsSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module SNiOSDocumentsSDK.Swift {
+    header "SNiOSDocumentsSDK-Swift.h"
+    requires objc
+}
