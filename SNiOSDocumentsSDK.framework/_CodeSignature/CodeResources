@@ -14,27 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oYrOY+m4UeRXAyXpWrwkh21EPYI=
+		VRcniejAAIz8cKjYqm2mo3dsOlU=
 		</data>
 		<key>LICENSE</key>
 		<data>
 		nYJr8Zb5XfovsVn+CEeVt3bXjqU=
 		</data>
-		<key>Modules/SNiOSDocumentsSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/SNiOSDocumentsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		4ZvPKTG6kKw3VUehekaZunuMw2Y=
+		2d5S2OQ51vtAvqtO6TcCJO/FQRo=
 		</data>
-		<key>Modules/SNiOSDocumentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/SNiOSDocumentsSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ukeMYGappnz3+b1m2c0gwKFlEwE=
+		v2y91BMWV8hcDHwVPc0p0NDb6lU=
 		</data>
-		<key>Modules/SNiOSDocumentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/SNiOSDocumentsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		mpJfvJadEVvz5qiG+IWYuVevv1s=
-		</data>
-		<key>Modules/SNiOSDocumentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		3gwLYWj4Tvs5rhQqqtc8Drk0r9o=
+		rCDXSxNUIAXk4GbWUp7PG3LQH0g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -68,32 +64,25 @@
 			Rm+X9wNyKO616EBjNif06VTizuKuB4w2rnnXZVPW45M=
 			</data>
 		</dict>
-		<key>Modules/SNiOSDocumentsSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/SNiOSDocumentsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nd5ZrJwE2ONT6BG/JhxfBJDDQULSOQtr2gBs2vOyCxI=
+			TQAk0gNsLllEhu4taWwNBktWCfiKw5I7ITGDD5nL+yc=
 			</data>
 		</dict>
-		<key>Modules/SNiOSDocumentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/SNiOSDocumentsSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i3nsVsdgjWjXwwEiOm/zugD6vsXvU4b9I1zdJqKLgcQ=
+			aIUxOVTXcGoSLP/B7tcRS6eetdqPnH/QbjyVFWsg8gs=
 			</data>
 		</dict>
-		<key>Modules/SNiOSDocumentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/SNiOSDocumentsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eQkqixexQpfbSe5QJwJJwCto1qoY9Akzg0NrNzgs1sI=
-			</data>
-		</dict>
-		<key>Modules/SNiOSDocumentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			MANVFEVaWpywbRZCekwof95rLePpwdXKvUR0typ8P9w=
+			tHH5WhOsRObYkUi0JYef5d/83EjUTlzf22n2i4h1/vA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
