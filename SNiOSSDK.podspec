@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
 
   spec.ios.deployment_target = '12.0'
-  spec.vendored_frameworks = 'SN_iOS_SDK-0.1.6/SNiOSDocumentsSDK.framework'
+  spec.vendored_frameworks = 'SNiOSDocumentsSDK.framework'
   spec.source       = { :http => 'https://github.com/SignNowInc/SN_iOS_SDK/archive/refs/tags/0.1.7.zip' }
-  #spec.source_files = "SNiOSDocumentsSDK.h"
+
 end
