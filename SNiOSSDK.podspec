@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SNiOSSDK"
-  spec.version      = "0.1.1"
+  spec.version      = "0.1.2"
   spec.summary      = "iOS SDK to integrate signing flow by SignNow into your product."
 
   spec.homepage     = "https://github.com/SignNowInc/SN_iOS_SDK"
