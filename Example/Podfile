@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'Example' do
+
+  use_frameworks!
+  platform :ios, '12.0'
+
+  pod 'SNiOSDocumentsSDK'
+  pod 'RxSwift'
+  pod 'RxRelay'
+  pod 'RxCocoa'
+  
+end

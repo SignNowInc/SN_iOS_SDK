@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (5.6.2)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SNiOSDocumentsSDK (0.2.15):
+    - Alamofire
+
+DEPENDENCIES:
+  - RxCocoa
+  - RxRelay
+  - RxSwift
+  - SNiOSDocumentsSDK
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SNiOSDocumentsSDK
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SNiOSDocumentsSDK: 64ef4b63fea6c4a49a4f992561dacac75ad40aff
+
+PODFILE CHECKSUM: bd2d4493fbca907007028e81eca7d30c1c570093
+
+COCOAPODS: 1.11.3
