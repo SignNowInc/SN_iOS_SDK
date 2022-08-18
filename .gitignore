@@ -3,3 +3,4 @@ build/
 *.ipa
 *.dSYM.zip
 Pods/
+Podfile.lock
