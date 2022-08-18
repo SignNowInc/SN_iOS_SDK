@@ -14,6 +14,8 @@ class MainViewController: UIViewController {
     @IBOutlet private weak var dateLabel: UILabel!
     @IBOutlet private weak var welcomeLabel: UILabel!
     
+    private lazy var authHelper = AuthenticationHelper()
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .darkContent
     }
@@ -27,6 +29,7 @@ class MainViewController: UIViewController {
         
         setNeedsStatusBarAppearanceUpdate()
         setupLabels()
+        performAuth()
     }
     
     private func setupLabels() {
@@ -42,6 +45,13 @@ class MainViewController: UIViewController {
         welcomeText.addAttributes([.font: UIFont(name: "SFProText-Semibold", size: 18.0) as Any],
                                   range: NSRange(location: 7, length: 8))
         welcomeLabel.attributedText = welcomeText
+    }
+    
+    private func performAuth() {
+        
+        authHelper.startSession(viewContext: self) {
+            print("session began")
+        }
     }
 }
 

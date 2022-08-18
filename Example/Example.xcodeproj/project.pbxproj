@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D492AD0366B814B92DF365A /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331694F6A9E2715D8E8724C2 /* Pods_Example.framework */; };
+		9009263228AE99B200796D1A /* AuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009263128AE99B200796D1A /* AuthHelper.swift */; };
 		90DF826228AD4F4B00D19F84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DF826128AD4F4B00D19F84 /* AppDelegate.swift */; };
 		90DF826928AD4F4B00D19F84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90DF826728AD4F4B00D19F84 /* Main.storyboard */; };
 		90DF826E28AD4F4B00D19F84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90DF826C28AD4F4B00D19F84 /* LaunchScreen.storyboard */; };
@@ -53,10 +53,12 @@
 		90DF82D728AD509400D19F84 /* ContractProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DF82C328AD509400D19F84 /* ContractProvider.swift */; };
 		90DF82D828AD509400D19F84 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DF82C528AD509400D19F84 /* Client.swift */; };
 		90DF82DA28AE263800D19F84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DF82D928AE263800D19F84 /* SceneDelegate.swift */; };
+		9F2AF0E70A03458D01DE4662 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370BB819149323E5B557ECA1 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		331694F6A9E2715D8E8724C2 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		370BB819149323E5B557ECA1 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9009263128AE99B200796D1A /* AuthHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHelper.swift; sourceTree = "<group>"; };
 		90DF825E28AD4F4B00D19F84 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DF826128AD4F4B00D19F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90DF826828AD4F4B00D19F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D492AD0366B814B92DF365A /* Pods_Example.framework in Frameworks */,
+				9F2AF0E70A03458D01DE4662 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +136,7 @@
 		4AC268574886D73A44FBFEEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				331694F6A9E2715D8E8724C2 /* Pods_Example.framework */,
+				370BB819149323E5B557ECA1 /* Pods_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -336,6 +338,7 @@
 			children = (
 				90DF82C228AD509400D19F84 /* ClientProvider.swift */,
 				90DF82C328AD509400D19F84 /* ContractProvider.swift */,
+				9009263128AE99B200796D1A /* AuthHelper.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				90DF82C828AD509400D19F84 /* CreateDepositViewController.swift in Sources */,
 				90DF82C928AD509400D19F84 /* CreateDepositViewModel.swift in Sources */,
 				90DF82CD28AD509400D19F84 /* GiveLoadViewModel.swift in Sources */,
+				9009263228AE99B200796D1A /* AuthHelper.swift in Sources */,
 				90DF82D328AD509400D19F84 /* AddClientViewController.swift in Sources */,
 				90DF82CF28AD509400D19F84 /* DepositAmountViewController.swift in Sources */,
 			);
@@ -534,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -594,6 +599,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

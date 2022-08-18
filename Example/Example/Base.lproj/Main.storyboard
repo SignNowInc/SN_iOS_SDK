@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Udw-Xo-51G">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -808,7 +809,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="JGX-HF-zAr" firstAttribute="centerX" secondItem="5Yi-xK-axT" secondAttribute="centerX" id="0Hf-GB-drr"/>
                                     <constraint firstItem="JGX-HF-zAr" firstAttribute="centerY" secondItem="5Yi-xK-axT" secondAttribute="centerY" id="Nrs-yi-uU0"/>
@@ -1298,7 +1299,7 @@
                                                 <constraint firstItem="CH4-qd-Y1g" firstAttribute="leading" secondItem="q8P-Mq-jSl" secondAttribute="trailing" constant="16" id="tck-tm-fMQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="clientUserpicImageView" destination="6WQ-Gw-Vg9" id="BkA-zw-srw"/>
                                             <outlet property="nameLabel" destination="CH4-qd-Y1g" id="DYj-qh-7fM"/>
@@ -1465,8 +1466,8 @@
         <image name="loan_icon" width="24" height="24"/>
         <image name="logo" width="177" height="25"/>
         <image name="minus" catalog="system" width="128" height="24"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus" width="12" height="12"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus_green" width="12" height="12"/>
         <image name="round_dashed_ellipse" width="36" height="36"/>
         <namedColor name="Gray 200">
